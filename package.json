@@ -1,0 +1,29 @@
+{
+    "name": "pip-boiler",
+    "version": "1.0.0",
+    "description": "Typescript boilerplate for Carbon Five's Programming Interview Practice Meetup.",
+    "main": "lib/index.js",
+    "scripts": {
+        "dev": "jest --detectOpenHandles --watchAll",
+        "start": "babel ./src -d ./lib --extensions \".ts\" && node ./lib/index.js",
+        "test": "jest --detectOpenHandles"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/evannorton/pip-boiler.git"
+    },
+    "author": "Evan Norton",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/evannorton/pip-boiler/issues"
+    },
+    "homepage": "https://github.com/evannorton/pip-boiler#readme",
+    "devDependencies": {
+        "@babel/cli": "^7.6.2",
+        "@babel/core": "^7.6.2",
+        "@babel/preset-env": "^7.6.2",
+        "@babel/preset-typescript": "^7.6.0",
+        "@types/jest": "^24.0.18",
+        "jest": "^24.9.0"
+    }
+}
